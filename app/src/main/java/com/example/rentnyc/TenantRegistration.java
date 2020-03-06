@@ -24,11 +24,6 @@ public class TenantRegistration extends AppCompatActivity {
             public void onClick(View v) {
                 createTenant(v);
             }
-
-//            @Override
-//            public void onClick(View v, TextView name) { //what's the error?
-//                createTenant(v);
-//            }
         });
 
     }
