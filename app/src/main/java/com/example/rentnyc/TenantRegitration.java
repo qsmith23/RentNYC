@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Register extends AppCompatActivity {
+public class TenantRegitration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,24 +17,12 @@ public class Register extends AppCompatActivity {
         Button tenantSelect = (Button) findViewById(R.id.tenant);
         Button landlordSelect = (Button) findViewById((R.id.landlord));
 
-        tenantSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                createUsr(v);
-            }
-        });
-
         landlordSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 createLandlord(v);
             }
         });
-    }
-
-    public void createUsr(View v){
-        Intent intent = new Intent(this, TenantRegistration.class);
-        startActivity(intent);
     }
 
     public void createLandlord(View v){
